@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="ConfirmOrderCell" customModule="黑金商城" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail_tianjiadizhi_icon" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-dv-Ife">
+                        <rect key="frame" x="93" y="40.5" width="16" height="16"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加配送地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXd-G2-Ec2">
+                        <rect key="frame" x="114" y="39.5" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" name="Gray01Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail_jinru_icon" translatesAutoresizingMaskIntoConstraints="NO" id="bAG-Io-Lem">
+                        <rect key="frame" x="305" y="42" width="7" height="13"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bAG-Io-Lem" secondAttribute="trailing" constant="8" id="2qq-rf-cWy"/>
+                    <constraint firstItem="bAG-Io-Lem" firstAttribute="centerY" secondItem="HXd-G2-Ec2" secondAttribute="centerY" id="9ac-VC-PW4"/>
+                    <constraint firstItem="HXd-G2-Ec2" firstAttribute="leading" secondItem="tsf-dv-Ife" secondAttribute="trailing" constant="5" id="Jm6-1b-zkg"/>
+                    <constraint firstItem="HXd-G2-Ec2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Pj2-5R-jFP"/>
+                    <constraint firstItem="HXd-G2-Ec2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VEW-OL-TEo"/>
+                    <constraint firstAttribute="bottom" secondItem="HXd-G2-Ec2" secondAttribute="bottom" constant="39.5" id="Yiv-U2-IlG"/>
+                    <constraint firstItem="tsf-dv-Ife" firstAttribute="centerY" secondItem="HXd-G2-Ec2" secondAttribute="centerY" id="cMa-Rv-Y9G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-107.24637681159422" y="-24.441964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mail_jinru_icon" width="7" height="13"/>
+        <image name="mail_tianjiadizhi_icon" width="16" height="16"/>
+        <namedColor name="Gray01Color">
+            <color red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

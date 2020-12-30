@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailsVController" customModule="BlackGoldMall" customModuleProvider="target">
+            <connections>
+                <outlet property="leftButton" destination="GUV-QN-2RL" id="vVS-yt-Wrq"/>
+                <outlet property="rightButton" destination="YvI-Wb-rVv" id="b73-Xa-7EY"/>
+                <outlet property="tableView" destination="QuA-dw-pCk" id="Sae-bA-xqc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QuA-dw-pCk">
+                    <rect key="frame" x="0.0" y="44" width="414" height="748"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Y8v-Il-XFc"/>
+                        <outlet property="delegate" destination="-1" id="ghW-m6-Dlq"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUV-QN-2RL">
+                    <rect key="frame" x="204" y="815" width="78" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <state key="normal" title="查看物流">
+                        <color key="titleColor" name="Red01Color"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonsAction:" destination="-1" eventType="touchUpInside" id="1gT-aD-Rcy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvI-Wb-rVv">
+                    <rect key="frame" x="307" y="815" width="78" height="32"/>
+                    <color key="backgroundColor" name="Red01Color"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="00r-rY-fJ5"/>
+                        <constraint firstAttribute="height" constant="32" id="11x-uD-4oA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <state key="normal" title="确认收货">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonsAction:" destination="-1" eventType="touchUpInside" id="sf8-wY-RCu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="YvI-Wb-rVv" firstAttribute="leading" secondItem="GUV-QN-2RL" secondAttribute="trailing" constant="25" id="598-YG-I2v"/>
+                <constraint firstItem="QuA-dw-pCk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Exg-g0-Jwq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YvI-Wb-rVv" secondAttribute="trailing" constant="29" id="HSv-Ni-duZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QuA-dw-pCk" secondAttribute="trailing" id="OJc-AS-FA1"/>
+                <constraint firstItem="GUV-QN-2RL" firstAttribute="width" secondItem="YvI-Wb-rVv" secondAttribute="width" id="S5M-F9-jnF"/>
+                <constraint firstItem="GUV-QN-2RL" firstAttribute="height" secondItem="YvI-Wb-rVv" secondAttribute="height" id="csz-Cv-eSk"/>
+                <constraint firstItem="GUV-QN-2RL" firstAttribute="top" secondItem="QuA-dw-pCk" secondAttribute="bottom" constant="23" id="eSo-5P-vHJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YvI-Wb-rVv" secondAttribute="bottom" constant="15" id="kpS-Nu-lrI"/>
+                <constraint firstItem="GUV-QN-2RL" firstAttribute="centerY" secondItem="YvI-Wb-rVv" secondAttribute="centerY" id="okR-aL-Fge"/>
+                <constraint firstItem="QuA-dw-pCk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qND-Tz-33x"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-349" y="221"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Red01Color">
+            <color red="0.87099999189376831" green="0.082000002264976501" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

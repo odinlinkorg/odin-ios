@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvitationController" customModule="黑金商城" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVx-Sk-KKL">
+                    <rect key="frame" x="0.0" y="811" width="414" height="51"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00C-qa-Ac7">
+                            <rect key="frame" x="0.0" y="0.0" width="127.5" height="51"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="复制链接" image="mine_lianjie">
+                                <color key="titleColor" name="Black02Color"/>
+                            </state>
+                            <connections>
+                                <action selector="linkButtonAction:" destination="-1" eventType="touchUpInside" id="3na-C0-i6z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQb-SB-OSO">
+                            <rect key="frame" x="127.5" y="0.0" width="159" height="51"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="复制邀请码" image="mine_fuzhi">
+                                <color key="titleColor" name="Black02Color"/>
+                            </state>
+                            <connections>
+                                <action selector="codeButtonAction:" destination="-1" eventType="touchUpInside" id="f5m-8B-c86"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0k-v4-Whd">
+                            <rect key="frame" x="286.5" y="0.0" width="127.5" height="51"/>
+                            <color key="backgroundColor" name="Red01Color"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="分享海报">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="shareAction:" destination="-1" eventType="touchUpInside" id="uqH-2l-Vwa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mQb-SB-OSO" secondAttribute="bottom" id="02w-8z-nCE"/>
+                        <constraint firstItem="mQb-SB-OSO" firstAttribute="leading" secondItem="00C-qa-Ac7" secondAttribute="trailing" id="42e-uH-LLh"/>
+                        <constraint firstItem="00C-qa-Ac7" firstAttribute="leading" secondItem="SVx-Sk-KKL" secondAttribute="leading" id="7e3-dJ-8cE"/>
+                        <constraint firstItem="I0k-v4-Whd" firstAttribute="top" secondItem="SVx-Sk-KKL" secondAttribute="top" id="BgQ-8M-1NI"/>
+                        <constraint firstItem="mQb-SB-OSO" firstAttribute="height" secondItem="00C-qa-Ac7" secondAttribute="height" id="DLF-K7-hmP"/>
+                        <constraint firstItem="00C-qa-Ac7" firstAttribute="top" secondItem="SVx-Sk-KKL" secondAttribute="top" id="Icn-IL-BQy"/>
+                        <constraint firstItem="I0k-v4-Whd" firstAttribute="leading" secondItem="mQb-SB-OSO" secondAttribute="trailing" id="NUp-X0-Fbp"/>
+                        <constraint firstItem="mQb-SB-OSO" firstAttribute="width" secondItem="00C-qa-Ac7" secondAttribute="width" multiplier="1.24138" id="Wl5-VN-5gZ"/>
+                        <constraint firstItem="mQb-SB-OSO" firstAttribute="leading" secondItem="00C-qa-Ac7" secondAttribute="trailing" id="Z2n-dS-cwx"/>
+                        <constraint firstItem="I0k-v4-Whd" firstAttribute="height" secondItem="00C-qa-Ac7" secondAttribute="height" id="c87-0z-D7F"/>
+                        <constraint firstItem="I0k-v4-Whd" firstAttribute="leading" secondItem="mQb-SB-OSO" secondAttribute="trailing" id="dR2-2a-NmH"/>
+                        <constraint firstAttribute="trailing" secondItem="I0k-v4-Whd" secondAttribute="trailing" id="jUh-0K-WYF"/>
+                        <constraint firstAttribute="bottom" secondItem="00C-qa-Ac7" secondAttribute="bottom" id="kNU-GP-F4u"/>
+                        <constraint firstAttribute="bottom" secondItem="I0k-v4-Whd" secondAttribute="bottom" id="pDf-tb-oam"/>
+                        <constraint firstAttribute="height" constant="51" id="q4G-9w-WOc"/>
+                        <constraint firstItem="I0k-v4-Whd" firstAttribute="width" secondItem="00C-qa-Ac7" secondAttribute="width" id="r3j-21-gcd"/>
+                        <constraint firstItem="mQb-SB-OSO" firstAttribute="top" secondItem="SVx-Sk-KKL" secondAttribute="top" id="tQ4-tW-0Si"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SVx-Sk-KKL" secondAttribute="bottom" id="6AX-rg-Ypk"/>
+                <constraint firstItem="SVx-Sk-KKL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Da5-GV-TIJ"/>
+                <constraint firstItem="SVx-Sk-KKL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="z7J-1y-8LO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-204" y="157"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_fuzhi" width="12.5" height="12.5"/>
+        <image name="mine_lianjie" width="13" height="13.5"/>
+        <namedColor name="Black02Color">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red01Color">
+            <color red="0.87099999189376831" green="0.082000002264976501" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

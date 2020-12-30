@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="175" id="KGk-i7-Jjw" customClass="OrderDetailsInformationCell" customModule="黑金商城" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="190"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-82-apT">
+                        <rect key="frame" x="15" y="0.0" width="294" height="190"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnY-lw-XIa">
+                                <rect key="frame" x="13" y="13" width="62" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单编号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi5-63-4f1">
+                                <rect key="frame" x="12.5" y="48.5" width="61.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="Gray01Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb6-V1-zbv">
+                                <rect key="frame" x="12.5" y="78" width="61.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="Gray01Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0y-KH-1oE">
+                                <rect key="frame" x="12.5" y="107.5" width="61.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="Gray01Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发货时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WC-yZ-mfc">
+                                <rect key="frame" x="12.5" y="137" width="61.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="Gray01Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注：无" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yay-dT-PoE">
+                                <rect key="frame" x="12.5" y="166.5" width="50" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="Gray01Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yay-dT-PoE" firstAttribute="top" secondItem="5WC-yZ-mfc" secondAttribute="bottom" constant="14.5" id="0b1-77-Aka"/>
+                            <constraint firstItem="yi5-63-4f1" firstAttribute="leading" secondItem="gVc-82-apT" secondAttribute="leading" constant="12.5" id="8o8-3v-i3s"/>
+                            <constraint firstItem="5WC-yZ-mfc" firstAttribute="leading" secondItem="yi5-63-4f1" secondAttribute="leading" id="INk-TN-G9M"/>
+                            <constraint firstItem="KnY-lw-XIa" firstAttribute="leading" secondItem="gVc-82-apT" secondAttribute="leading" constant="13" id="Ogt-Qw-O06"/>
+                            <constraint firstItem="5WC-yZ-mfc" firstAttribute="top" secondItem="y0y-KH-1oE" secondAttribute="bottom" constant="14.5" id="S0j-Bb-MSz"/>
+                            <constraint firstItem="yay-dT-PoE" firstAttribute="leading" secondItem="yi5-63-4f1" secondAttribute="leading" id="Sce-i4-lDE"/>
+                            <constraint firstItem="y0y-KH-1oE" firstAttribute="leading" secondItem="yi5-63-4f1" secondAttribute="leading" id="Vho-5K-t02"/>
+                            <constraint firstItem="KnY-lw-XIa" firstAttribute="top" secondItem="gVc-82-apT" secondAttribute="top" constant="13" id="YFC-Zz-iYM"/>
+                            <constraint firstItem="fb6-V1-zbv" firstAttribute="leading" secondItem="yi5-63-4f1" secondAttribute="leading" id="iox-a6-Dil"/>
+                            <constraint firstItem="yi5-63-4f1" firstAttribute="top" secondItem="KnY-lw-XIa" secondAttribute="bottom" constant="17.5" id="lZ2-pT-Pwe"/>
+                            <constraint firstAttribute="bottom" secondItem="yay-dT-PoE" secondAttribute="bottom" constant="8.5" id="mRp-OV-U2S"/>
+                            <constraint firstItem="fb6-V1-zbv" firstAttribute="top" secondItem="yi5-63-4f1" secondAttribute="bottom" constant="14.5" id="qP2-eA-5qW"/>
+                            <constraint firstItem="y0y-KH-1oE" firstAttribute="top" secondItem="fb6-V1-zbv" secondAttribute="bottom" constant="14.5" id="vgo-Gp-wBz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gVc-82-apT" secondAttribute="trailing" constant="15" id="063-sy-rpo"/>
+                    <constraint firstItem="gVc-82-apT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="EA0-7h-4Ol"/>
+                    <constraint firstAttribute="bottom" secondItem="gVc-82-apT" secondAttribute="bottom" id="iXJ-71-2ue"/>
+                    <constraint firstItem="gVc-82-apT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yCU-3S-QPr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fahuoTimeLabel" destination="5WC-yZ-mfc" id="nqK-wY-s1X"/>
+                <outlet property="messageLabel" destination="yay-dT-PoE" id="HKc-5P-pdE"/>
+                <outlet property="orderId" destination="yi5-63-4f1" id="2nE-bZ-YXp"/>
+                <outlet property="payLabel" destination="y0y-KH-1oE" id="oUG-7P-m6T"/>
+                <outlet property="timeLabel" destination="fb6-V1-zbv" id="1f4-DJ-Gfh"/>
+            </connections>
+            <point key="canvasLocation" x="-210" y="73"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Gray01Color">
+            <color red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

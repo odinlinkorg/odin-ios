@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FillInvitationCodeController" customModule="BlackGoldMall" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eR2-uR-yDT">
+                    <rect key="frame" x="15" y="59" width="384" height="384"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商城扫一扫，向我转账" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qn-E4-NxJ">
+                            <rect key="frame" x="115.5" y="32" width="153" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" name="Black02Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1uX-Ei-LDi">
+                            <rect key="frame" x="103.5" y="68.5" width="177" height="176.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="1uX-Ei-LDi" secondAttribute="height" multiplier="1:1" id="Yd3-qZ-gVO"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17815514155" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHz-O5-J4X">
+                            <rect key="frame" x="153.5" y="263" width="77" height="15"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="textColor" name="Gray01Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w16-Q8-9bH">
+                            <rect key="frame" x="147" y="310" width="90" height="34"/>
+                            <color key="backgroundColor" name="GrayLineColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="XH8-Oi-7NR"/>
+                                <constraint firstAttribute="width" constant="90" id="Zpn-Zt-Lqt"/>
+                            </constraints>
+                            <state key="normal" title="保存图片">
+                                <color key="titleColor" name="Gray01Color"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="6qn-E4-NxJ" firstAttribute="centerX" secondItem="eR2-uR-yDT" secondAttribute="centerX" id="3Xj-Ba-GqO"/>
+                        <constraint firstItem="iHz-O5-J4X" firstAttribute="centerX" secondItem="eR2-uR-yDT" secondAttribute="centerX" id="4GC-zx-F7z"/>
+                        <constraint firstItem="w16-Q8-9bH" firstAttribute="centerX" secondItem="eR2-uR-yDT" secondAttribute="centerX" id="NXc-us-7NJ"/>
+                        <constraint firstItem="iHz-O5-J4X" firstAttribute="top" secondItem="1uX-Ei-LDi" secondAttribute="bottom" constant="18" id="QRx-JM-LqV"/>
+                        <constraint firstItem="1uX-Ei-LDi" firstAttribute="top" secondItem="6qn-E4-NxJ" secondAttribute="bottom" constant="18.5" id="ip2-Mz-Uai"/>
+                        <constraint firstItem="w16-Q8-9bH" firstAttribute="top" secondItem="iHz-O5-J4X" secondAttribute="bottom" constant="32" id="j80-QT-yrX"/>
+                        <constraint firstAttribute="width" secondItem="eR2-uR-yDT" secondAttribute="height" id="qMk-Zf-6Jx"/>
+                        <constraint firstItem="6qn-E4-NxJ" firstAttribute="top" secondItem="eR2-uR-yDT" secondAttribute="top" constant="32" id="qdg-B9-oRG"/>
+                        <constraint firstItem="1uX-Ei-LDi" firstAttribute="centerX" secondItem="eR2-uR-yDT" secondAttribute="centerX" id="rcl-pE-bej"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eR2-uR-yDT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="3D7-Q4-2bV"/>
+                <constraint firstItem="1uX-Ei-LDi" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="160:375" id="MIr-58-qbe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eR2-uR-yDT" secondAttribute="trailing" constant="15" id="ZPf-gZ-tuP"/>
+                <constraint firstItem="eR2-uR-yDT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="q2C-LM-IML"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="140.625"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black02Color">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray01Color">
+            <color red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayLineColor">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

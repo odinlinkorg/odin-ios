@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ConfirmOrderPayTypeCell" customModule="黑金商城" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3W-7F-KTq">
+                        <rect key="frame" x="12" y="16" width="70" height="21"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ODIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tta-te-4ue">
+                        <rect key="frame" x="50.5" y="58" width="38.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您当前账户可用                   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biG-XB-cpJ">
+                        <rect key="frame" x="50.5" y="78" width="223.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" name="Black02Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BGC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MC-Ri-MpF">
+                        <rect key="frame" x="50.5" y="114" width="32.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="您当前账户可用 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axc-J4-ECl">
+                        <rect key="frame" x="50.5" y="134" width="223.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" name="Black02Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="odin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8JS-Mt-7Pe">
+                        <rect key="frame" x="12.5" y="60" width="30" height="30"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scb_icon" translatesAutoresizingMaskIntoConstraints="NO" id="J4G-6e-Q5n">
+                        <rect key="frame" x="12.5" y="116" width="30" height="30"/>
+                    </imageView>
+                    <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6Z-NC-RKd">
+                        <rect key="frame" x="277" y="113.5" width="35" height="35"/>
+                        <state key="normal" image="weixuan_icon"/>
+                        <connections>
+                            <action selector="odinButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zHx-Q3-gKV"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWP-pp-PTu">
+                        <rect key="frame" x="277" y="57.5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="tlZ-eg-6NR"/>
+                            <constraint firstAttribute="width" constant="35" id="y9O-DB-pAr"/>
+                        </constraints>
+                        <state key="normal" image="xuanzhong"/>
+                        <connections>
+                            <action selector="odinButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Gln-lR-Shg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9MC-Ri-MpF" firstAttribute="leading" secondItem="J4G-6e-Q5n" secondAttribute="trailing" constant="8" id="1Qk-Qu-49e"/>
+                    <constraint firstItem="tta-te-4ue" firstAttribute="leading" secondItem="8JS-Mt-7Pe" secondAttribute="trailing" constant="8" id="1af-ch-xtT"/>
+                    <constraint firstItem="biG-XB-cpJ" firstAttribute="top" secondItem="tta-te-4ue" secondAttribute="bottom" constant="2" id="4hg-Rt-4UU"/>
+                    <constraint firstItem="8JS-Mt-7Pe" firstAttribute="top" secondItem="t3W-7F-KTq" secondAttribute="bottom" constant="23" id="53v-QQ-f42"/>
+                    <constraint firstItem="8JS-Mt-7Pe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12.5" id="77b-yy-8NE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="biG-XB-cpJ" secondAttribute="trailing" constant="30" id="8iz-LB-iHV"/>
+                    <constraint firstItem="axc-J4-ECl" firstAttribute="leading" secondItem="J4G-6e-Q5n" secondAttribute="trailing" constant="8" id="9g0-ia-38q"/>
+                    <constraint firstItem="9MC-Ri-MpF" firstAttribute="centerY" secondItem="J4G-6e-Q5n" secondAttribute="centerY" constant="-8" id="Aee-ua-2Fp"/>
+                    <constraint firstItem="u6Z-NC-RKd" firstAttribute="height" secondItem="BWP-pp-PTu" secondAttribute="height" id="BUR-DC-b79"/>
+                    <constraint firstItem="axc-J4-ECl" firstAttribute="top" secondItem="9MC-Ri-MpF" secondAttribute="bottom" constant="2" id="FXI-eR-feA"/>
+                    <constraint firstItem="u6Z-NC-RKd" firstAttribute="trailing" secondItem="BWP-pp-PTu" secondAttribute="trailing" id="In1-bK-HgM"/>
+                    <constraint firstItem="t3W-7F-KTq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="LYR-el-4pb"/>
+                    <constraint firstItem="BWP-pp-PTu" firstAttribute="centerY" secondItem="8JS-Mt-7Pe" secondAttribute="centerY" id="MgQ-QB-CHL"/>
+                    <constraint firstItem="u6Z-NC-RKd" firstAttribute="width" secondItem="BWP-pp-PTu" secondAttribute="width" id="XDJ-w2-VN1"/>
+                    <constraint firstItem="J4G-6e-Q5n" firstAttribute="leading" secondItem="8JS-Mt-7Pe" secondAttribute="leading" id="Yzy-Mf-Xuo"/>
+                    <constraint firstItem="biG-XB-cpJ" firstAttribute="leading" secondItem="8JS-Mt-7Pe" secondAttribute="trailing" constant="8" id="bmv-8b-b2g"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="axc-J4-ECl" secondAttribute="trailing" constant="30" id="dUb-Cg-H05"/>
+                    <constraint firstItem="J4G-6e-Q5n" firstAttribute="top" secondItem="8JS-Mt-7Pe" secondAttribute="bottom" constant="26" id="g1t-MO-BzC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="axc-J4-ECl" secondAttribute="bottom" constant="13.5" id="g8j-oe-E7M"/>
+                    <constraint firstItem="tta-te-4ue" firstAttribute="leading" secondItem="8JS-Mt-7Pe" secondAttribute="trailing" constant="8" id="m2w-i7-AVm"/>
+                    <constraint firstItem="tta-te-4ue" firstAttribute="centerY" secondItem="8JS-Mt-7Pe" secondAttribute="centerY" constant="-8" id="nKQ-6x-7xO"/>
+                    <constraint firstAttribute="trailing" secondItem="BWP-pp-PTu" secondAttribute="trailing" constant="8" id="nXC-SN-92d"/>
+                    <constraint firstItem="u6Z-NC-RKd" firstAttribute="centerY" secondItem="J4G-6e-Q5n" secondAttribute="centerY" id="uCS-i4-XdC"/>
+                    <constraint firstItem="t3W-7F-KTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="zJi-4v-fGh"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                        <real key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgcButton" destination="u6Z-NC-RKd" id="NJA-jV-MXH"/>
+                <outlet property="bgcLabel" destination="axc-J4-ECl" id="Pdg-Eo-bj8"/>
+                <outlet property="odinButton" destination="BWP-pp-PTu" id="9NX-0u-IgA"/>
+                <outlet property="odinLabel" destination="biG-XB-cpJ" id="2a8-6O-fON"/>
+            </connections>
+            <point key="canvasLocation" x="-701" y="110"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="odin_icon" width="30" height="30"/>
+        <image name="scb_icon" width="30" height="30"/>
+        <image name="weixuan_icon" width="15" height="15"/>
+        <image name="xuanzhong" width="15" height="15"/>
+        <namedColor name="Black02Color">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
